@@ -752,7 +752,7 @@ void Upscaling::ConfigureUpscaling(RE::BSGraphics::State* a_viewport)
 	dynamicResolutionWidthRatio = resolutionScale.x;
 	dynamicResolutionHeightRatio = resolutionScale.y;
 
-	// Disable dynamic resolution unless the game explictly enables it
+	// Disable dynamic resolution unless the game explicitly enables it
 	if (!globals::game::isVR)
 		runtimeData.dynamicResolutionLock = 1;
 
