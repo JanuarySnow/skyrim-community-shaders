@@ -20,7 +20,7 @@ public:
 	// Feature interface
 	virtual inline std::string GetName() override { return "Upscaling"; }
 	virtual inline std::string GetShortName() override { return "Upscaling"; }
-	virtual inline bool SupportsVR() override { return false; }
+	virtual inline bool SupportsVR() override { return true; }
 	virtual inline bool IsCore() const override { return false; }
 	virtual inline std::string_view GetCategory() const override { return "Display"; }
 
@@ -90,6 +90,7 @@ public:
 	// FG FPS Measurement for Overlay
 	bool IsFrameGenerationActive() const;
 	float GetFrameGenerationFrameTime() const;
+	bool IsUpscalingActive();
 
 	// Feature interface overrides
 	virtual void DrawSettings() override;
